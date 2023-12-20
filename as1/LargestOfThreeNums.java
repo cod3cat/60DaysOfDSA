@@ -12,7 +12,7 @@ public class LargestOfThreeNums {
         int number2 = scanner.nextInt();
         int number3 = scanner.nextInt();
         
-        int max = 0;
+        /*int max = 0;
 
         if (number1 > number2) {
             max = number1;
@@ -24,6 +24,12 @@ public class LargestOfThreeNums {
             System.out.printf("Maximum of 3 numbers is %d", max);
         } else {{
             System.out.printf("Maximum of 3 numbers is %d", number3);
-        }}
+        }} */
+
+        int max = Math.max(number1, Math.max(number2, number3));
+        
+        System.out.printf("Maximum of 3 numbers is %d", max);
+        scanner.close();
     }
+    
 }
