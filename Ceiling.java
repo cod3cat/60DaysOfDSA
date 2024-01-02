@@ -1,7 +1,7 @@
 public class Ceiling {
     public static void main(String[] args) {
         int arr[] = {2,3,5,9,14,16,18};
-        int target = 4;
+        int target = 11;
         System.out.println(findCeiling(arr, target));
     }
 
@@ -21,11 +21,11 @@ public class Ceiling {
                 if (target > arr[mid]) {
                     start = mid + 1;
                 } else {
-                    end = mid;
+                    end = mid - 1;
                 }
             } else {
                 if(target > arr[mid]) {
-                    end = mid;
+                    end = mid + 1;
                 } else {
                     start = mid - 1;
                 }
