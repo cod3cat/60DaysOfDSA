@@ -15,7 +15,7 @@ public class SearchInMatrices {
         int row = 0;
         int col = arr.length - 1;
 
-        while (row < arr.length - 1 && col > 0) {
+        while (row < arr.length - 1 && col >= 0) {
                 if (arr[row][col] == target) {
                 return new int[] {row, col};
             }
