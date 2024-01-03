@@ -2,6 +2,8 @@ import java.util.Arrays;
 
 public class SearchInMatrices {
     
+    /* Search for an integer in a array where rows and columns are sorted individually*/
+
     public static void main(String[] args) {
         int[][] arr = {{10, 20, 30, 40}, {15,25,35,45}, {28,29,38,48}, {33, 34, 39, 50}};
         int target = 38;
